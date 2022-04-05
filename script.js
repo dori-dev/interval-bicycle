@@ -1,3 +1,5 @@
+const audio = new Audio("assets/complete.mp3");
+
 function processData(allText) {
   var allTextLines = allText.split(/\r\n|\n/);
   var lines = [];
@@ -14,6 +16,7 @@ function processData(allText) {
 }
 
 function useData(data, line) {
+  audio.play();
   type = data[line][0];
   intensity = data[line][1];
   full_time = data[line][2];
