@@ -20,7 +20,10 @@ function useData(data, line) {
   type = data[line][0];
   intensity = data[line][1];
   full_time = data[line][2];
-  console.log(type + intensity + full_time);
+  var typeElement = document.getElementById("type");
+  var typeIntensity = document.getElementById("intensity");
+  typeElement.textContent = type
+  typeIntensity.textContent = intensity
   timer(full_time, line + 1, data);
 }
 
@@ -30,7 +33,6 @@ function timer(time, next_line, data) {
     var sec = time - min * 60;
     minutes = min < 10 ? "0" + min : min;
     seconds = sec < 10 ? "0" + sec : sec;
-    console.log(`${minutes}:${seconds}`);
     document.getElementById("this-time").innerHTML = `${minutes}:${seconds}`;
     time--;
     if (time <= 0) {
@@ -47,7 +49,6 @@ function total_timer() {
     var sec = total_time - min * 60;
     minutes = min < 10 ? "0" + min : min;
     seconds = sec < 10 ? "0" + sec : sec;
-    console.log(`${minutes}:${seconds}`);
     document.getElementById("total-time").innerHTML = `${minutes}:${seconds}`;
     total_time++;
   }, 1000);
