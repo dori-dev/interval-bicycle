@@ -3,13 +3,11 @@
 A site for simplicity in doing interval cycling exercise program.
 
 #
-
 # How to Use
 
 Just open `index.html` with your browser!
 
 #
-
 ## Links
 
 Demo of Project: [dori-dev.github.io/interval-bicycle](https://dori-dev.github.io/interval-bicycle/)
