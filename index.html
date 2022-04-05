@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/bootstrap.css">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <title>اینتروال - دوچرخه</title>
@@ -12,26 +13,28 @@
 </head>
 
 <body>
-    <h1 class="title">برنامه اینتروال دوچرخه</h1>
-    <div class="about" id="about">
-        <p>سلام، این سایت برای سادگی در انجام برنامه
-            <a href="https://www.elmevarzesh.com/high-intensity-interval-training/">
-                تمرینات اینتروال</a>
-            دوچرخه سواری ساخته شده است.
-            هر موقع مایل به شروع بودی روی دکمه کلیک کن!
-        </p>
-        <button class="submit" id="submit">برای شروع کلیک کنید</button>
-    </div>
-    <div class="info" id="info" style="display: none;">
-        <h2 class="activity-type-title">نوع فعالیت</h2>
-        <h2 class="activity-type" id="type"></h2>
-        <h2 class="activity-intensity-title">شدت فعالیت</h2>
-        <h2 class="activity-intensity" id="intensity"></h2>
-        <h3 class="this-time-hint">مدت زمان باقی مانده</h3>
-        <h3 class="this-time" id="this-time">00:00</h3>
-        <h3 class="total-time-hint">کل زمان سپری شده</h3>
-        <h3 class="total-time" id="total-time">00:00</h3>
-        <button class="end-btn" id="end">اتمام تمرین</button>
+    <div class="container">
+        <h1 class="title">برنامه اینتروال دوچرخه</h1>
+        <div class="about" id="about">
+            <p>سلام، این سایت برای سادگی در انجام برنامه
+                <a target="_blank" href="https://www.elmevarzesh.com/high-intensity-interval-training/">
+                    تمرینات اینتروال</a>
+                دوچرخه سواری ساخته شده است.
+                هر موقع مایل به شروع بودی روی دکمه کلیک کن!
+            </p>
+            <button class="btn btn-success btn-lg" id="submit">برای شروع کلیک کن</button>
+        </div>
+        <div class="info" id="info" style="display: none;">
+            <h2 class="type-title hint">نوع فعالیت 🚴</h2>
+            <h2 class="type changer" id="type">گرم کردن</h2>
+            <h2 class="intensity-title hint">شدت فعالیت 🔥</h2>
+            <h2 class="intensity changer" id="intensity">پایین</h2>
+            <h3 class="this-time hint">مدت زمان باقی مانده ⌛</h3>
+            <h2 class="changer time" id="this-time">05:00</h2>
+            <h3 class="total-time hint">کل زمان سپری شده ⏱️</h3>
+            <h2 class="changer time" id="total-time">00:00</h2>
+            <button class="btn btn-danger btn-lg end" id="end">اتمام تمرین</button>
+        </div>
     </div>
 </body>
 
